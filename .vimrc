@@ -52,6 +52,8 @@ set incsearch
 set laststatus=2
 " Disable error bells
 set noerrorbells
+" Use visual bell
+set vb
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position
