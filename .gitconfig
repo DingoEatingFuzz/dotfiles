@@ -85,7 +85,7 @@
 [push]
 
   # Only push the branch you are on
-  default = simple
+  default = upstream
 
 # URL shorthands
 
