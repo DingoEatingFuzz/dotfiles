@@ -208,3 +208,8 @@ function o() {
 function tre() {
   tree -aC -I '.git|node_modules|bower_components|vendor' --dirsfirst "$@" | less -FRNX;
 }
+
+
+function lsres() {
+  ls -1 *.{png,jpg,jpeg,gif,bmp} 2>/dev/null | xargs identify -format "%f %w x %h\n" | column -t;
+}
