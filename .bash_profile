@@ -1,6 +1,13 @@
 # Add `~/bin` to the `$PATH`
 export PATH="/usr/local/bin:$HOME/bin:$PATH";
 
+# Configure Go
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# Start rbenv immediately
+eval "$(rbenv init -)"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
