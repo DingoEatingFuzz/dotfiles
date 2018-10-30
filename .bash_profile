@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="/usr/local/bin:$HOME/bin:$PATH";
+export PATH="/Library/Frameworks/GDAL.framework/Programs:/usr/local/bin:$HOME/bin:$PATH";
 
 # Configure Go
 export GOPATH=$(go env GOPATH)

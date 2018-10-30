@@ -42,6 +42,12 @@ set number
 syntax on
 " Make tabs as wide as two spaces
 set tabstop=2
+" Expand tabs
+filetype plugin indent on
+" when indenting with '>', use 4 spaces width
+set shiftwidth=2
+" On pressing tab, insert 4 spaces
+set expandtab
 " Highlight searches
 set hlsearch
 " Ignore case of searches
